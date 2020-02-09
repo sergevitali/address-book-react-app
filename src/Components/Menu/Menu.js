@@ -6,7 +6,7 @@ const menu = (props) => {
     <div className={styles.Menu}>
       <div>
         <form>
-          <input className={styles.Input} onChange={props.inputted} type='text' placeholder='Name or department' name='search' />
+          <input className={styles.Input} onChange={props.inputted} type='text' placeholder='Last Name or department' name='search' />
           <button className={styles.Button} onClick={props.searched}>Search</button>
         </form>
       </div>
