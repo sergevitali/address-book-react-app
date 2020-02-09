@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/address-book-react-app/static/css/main.d29d5d5c.chunk.css",
-    "main.js": "/address-book-react-app/static/js/main.cdd3b24f.chunk.js",
-    "main.js.map": "/address-book-react-app/static/js/main.cdd3b24f.chunk.js.map",
+    "main.css": "/address-book-react-app/static/css/main.ea1b752f.chunk.css",
+    "main.js": "/address-book-react-app/static/js/main.2ade54bc.chunk.js",
+    "main.js.map": "/address-book-react-app/static/js/main.2ade54bc.chunk.js.map",
     "runtime-main.js": "/address-book-react-app/static/js/runtime-main.fe1d8895.js",
     "runtime-main.js.map": "/address-book-react-app/static/js/runtime-main.fe1d8895.js.map",
     "static/js/2.aa62f1cd.chunk.js": "/address-book-react-app/static/js/2.aa62f1cd.chunk.js",
     "static/js/2.aa62f1cd.chunk.js.map": "/address-book-react-app/static/js/2.aa62f1cd.chunk.js.map",
     "index.html": "/address-book-react-app/index.html",
-    "precache-manifest.59ff9b29d8f0ca46e39a5abed8cd16f1.js": "/address-book-react-app/precache-manifest.59ff9b29d8f0ca46e39a5abed8cd16f1.js",
+    "precache-manifest.1b60359ed53b8385882c8568849f2c30.js": "/address-book-react-app/precache-manifest.1b60359ed53b8385882c8568849f2c30.js",
     "service-worker.js": "/address-book-react-app/service-worker.js",
-    "static/css/main.d29d5d5c.chunk.css.map": "/address-book-react-app/static/css/main.d29d5d5c.chunk.css.map",
+    "static/css/main.ea1b752f.chunk.css.map": "/address-book-react-app/static/css/main.ea1b752f.chunk.css.map",
     "static/js/2.aa62f1cd.chunk.js.LICENSE.txt": "/address-book-react-app/static/js/2.aa62f1cd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fe1d8895.js",
     "static/js/2.aa62f1cd.chunk.js",
-    "static/css/main.d29d5d5c.chunk.css",
-    "static/js/main.cdd3b24f.chunk.js"
+    "static/css/main.ea1b752f.chunk.css",
+    "static/js/main.2ade54bc.chunk.js"
   ]
 }
