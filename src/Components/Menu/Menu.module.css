@@ -1,8 +1,8 @@
 .Menu{
-    width:80%;
-    margin:auto;
-    padding:10px;
-    display:flex;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
     justify-content: space-between;
     background-color: rgb(192, 201, 202);
   }
@@ -16,14 +16,14 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left:10px;
+    margin-left: 10px;
   }
   .Button:active, .Button:focus{
-    outline:none;
+    outline: none;
   }
   .Button:hover{
     background-color: rgb(67, 78, 99);
-    cursor:pointer;
+    cursor: pointer;
   }
   
 .Input{
@@ -36,6 +36,6 @@
       align-items: center;
     }
     .Button {
-      margin:10px;
+      margin: 10px;
     }
   }

@@ -48,11 +48,11 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left:10px;
+    margin-left: 10px;
     cursor:pointer;
     background-color: rgb(48, 128, 128);
   }
   .FormContent button:disabled{
-    background-color:gray;
-    cursor:not-allowed;
+    background-color: gray;
+    cursor: not-allowed;
   }
