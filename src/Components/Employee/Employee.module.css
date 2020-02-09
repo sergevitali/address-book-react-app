@@ -1,0 +1,37 @@
+.Employee{
+    background-color: rgb(218, 223, 226);
+    padding:10px;
+    padding-left:20px;
+    margin:auto;
+    margin-bottom:20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    text-align: left;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:rgb(49, 50, 51);
+}
+
+.Red {
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    background-color: rgb(153, 95, 106);
+  }
+  
+.Red:hover{
+    background-color: rgb(124, 71, 81);
+}
+@media (max-width:750px){
+    .Employee{
+        width: 80%;
+    }
+  }

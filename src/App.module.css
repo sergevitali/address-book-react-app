@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.Border{
+  margin:auto;
+  width:80%;
+  padding:10px;
+  padding-top:30px;
+  background-color: rgb(241, 241, 241);
+}

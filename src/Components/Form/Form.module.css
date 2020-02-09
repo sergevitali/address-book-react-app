@@ -1,0 +1,58 @@
+  .Form{
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .FormContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .Close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .Close:hover,
+  .Close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .FormContent input{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .FormContent button{
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:10px;
+    cursor:pointer;
+    background-color: rgb(48, 128, 128);
+  }
+  .FormContent button:disabled{
+    background-color:gray;
+    cursor:not-allowed;
+  }

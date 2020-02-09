@@ -1,0 +1,41 @@
+.Menu{
+    width:80%;
+    margin:auto;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(192, 201, 202);
+  }
+  
+  .Button {
+    background-color: rgb(82, 96, 124); 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:10px;
+  }
+  .Button:active, .Button:focus{
+    outline:none;
+  }
+  .Button:hover{
+    background-color: rgb(67, 78, 99);
+    cursor:pointer;
+  }
+  
+.Input{
+    padding: 10px 20px;
+  }
+
+  @media (max-width:750px){
+    .Menu{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .Button {
+      margin:10px;
+    }
+  }
