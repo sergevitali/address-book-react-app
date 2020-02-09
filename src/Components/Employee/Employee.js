@@ -3,7 +3,7 @@ import styles from './Employee.module.css'
 
 const employee = (props) => {
   const upperCase = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1)
+    return str.charAt(0).toUpperCase() + str.slice(1);
   }
   return (
     <div className={styles.Employee}>

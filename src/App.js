@@ -9,9 +9,9 @@ class App extends Component {
     super(props);
     this.state = {
       employees: [
-        { firstName: 'Jane', lastName: 'Doe', department: 'Marketing', phoneNumber: '0256589705' },
-        { firstName: 'Nick', lastName: 'Mullins', department: 'Finance', phoneNumber: '4356855772' },
-        { firstName: 'Sam', lastName: 'Jackson', department: 'Sales', phoneNumber: '0212145544' }
+        {firstName: 'Jane', lastName: 'Doe', department: 'Marketing', phoneNumber: '0256589705', id: 'emp1' },
+        {firstName: 'Nick', lastName: 'Mullins', department: 'Finance', phoneNumber: '4356855772', id: 'emp2' },
+        {firstName: 'Sam', lastName: 'Jackson', department: 'Sales', phoneNumber: '0212145544', id: 'emp3' }
       ],
       newEmployee: {
         firstName: {
@@ -64,6 +64,7 @@ class App extends Component {
         }
       },
       submitted: false,
+      elementId:4,
       formIsValid: false,
       employeesSorted: false,
       displayForm: false,
@@ -102,11 +103,14 @@ class App extends Component {
     for (const inputIdentifier in this.state.newEmployee) { // inputIdentifier:firstName, lastName...)
       newEmployee[inputIdentifier] = this.state.newEmployee[inputIdentifier].value
     }
+    newEmployee["id"] = "emp" + this.state.elementId
+    console.log()
     let submitted = this.state.submitted
     submitted = true
     this.setState({
       employees: [...this.state.employees, newEmployee],
-      submitted: submitted
+      submitted: submitted,
+      elementId:this.state.elementId + 1
     })
     setTimeout(() => this.clearInputFields())
   }
@@ -150,14 +154,16 @@ class App extends Component {
   }
 
   //Function to delete an employee contact
-  deleteEmployeeHandler = (index) => {
+  deleteEmployeeHandler = (id) => {
+    let newEmployees
+    let newFilteredElements
     const filteredElements = [...this.state.filteredElements]
-    filteredElements.splice(index, 1)
+    newFilteredElements=filteredElements.filter(elem=>elem.id!==id)
     const employees = [...this.state.employees]
-    employees.splice(index, 1)
+    newEmployees=employees.filter(item=>item.id!==id)
     this.setState({
-      employees: employees,
-      filteredElements: filteredElements
+      employees: newEmployees,
+      filteredElements: newFilteredElements
     })
   }  
 
@@ -200,8 +206,9 @@ class App extends Component {
       const lowerCaseDepartment = employee.department.toLowerCase()
       const lowerCaseLastName = employee.lastName.toLowerCase()
       if (lowerCaseDepartment.includes(searchedValue) || lowerCaseLastName.includes(searchedValue)) {
-        return filteredEmployees.push(employee)
+         filteredEmployees.push(employee)
       }
+      return filteredEmployees
     })
     this.setState({
       filteredElements: filteredEmployees,
@@ -264,7 +271,7 @@ class App extends Component {
               key={index + employee.firstName}
               firstName={employee.firstName}
               lastName={employee.lastName}
-              delete={() => this.deleteEmployeeHandler(index)}
+              delete={() => this.deleteEmployeeHandler(employee.id)}
               department={employee.department}
               phoneNumber={employee.phoneNumber}
             />
