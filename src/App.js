@@ -249,7 +249,7 @@ class App extends Component {
       employees = this.state.employees
     return (
       <div className = { styles.App } >
-        <h1>Employee Address Book</h1> {
+        <h1 style={{padding:'10px'}}>Employee Address Book</h1> {
         this.state.displayForm ?
         <Form handleSubmit={(event) => this.addEmployeeHandler(event)}
               changed={this.inputChangedHandler}
