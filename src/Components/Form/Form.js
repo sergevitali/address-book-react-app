@@ -7,7 +7,7 @@ const form = (props) => {
     <div className={styles.Form}>
       <form className={styles.FormContent} onSubmit={props.handleSubmit}>
         <span className={styles.Close} onClick={props.closeForm}>X</span>
-        <h1>Add New Employee</h1>
+        <h2 className={styles.Center}>Add New Employee</h2>
         {props.formElements.map(element => (
           <Input
             key={element.id}

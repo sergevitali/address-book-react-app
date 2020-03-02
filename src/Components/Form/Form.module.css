@@ -2,7 +2,7 @@
     display: block; 
     position: fixed; 
     z-index: 1; 
-    padding-top: 100px; 
+    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%; 
@@ -11,13 +11,16 @@
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
   }
-  
+  .Center{
+    text-align: center;
+    margin-top:30px;
+  }
   .FormContent {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 60%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   }
   .Close {
@@ -25,6 +28,7 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-top:-10px;
   }
   
   .Close:hover,
@@ -34,9 +38,9 @@
     cursor: pointer;
   }
   .FormContent input{
-    width: 50%;
+    width: 400px;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     box-sizing: border-box;
   }
 
@@ -49,10 +53,20 @@
     display: inline-block;
     font-size: 16px;
     margin-left: 10px;
+    margin-top:15px;
     cursor:pointer;
     background-color: rgb(48, 128, 128);
   }
   .FormContent button:disabled{
     background-color: gray;
     cursor: not-allowed;
+  }
+
+  @media (max-width:800px){
+    .FormContent input{
+      width: 90%;
+    }
+    .FormContent {
+      width: 70%;
+    }
   }
