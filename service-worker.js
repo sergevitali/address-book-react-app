@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/address-book-react-app/precache-manifest.a4e8e398cee64ac47738240b550813f4.js"
+  "/address-book-react-app/precache-manifest.c4d873350b83578edd7e007795cc9a33.js"
 );
 
 self.addEventListener('message', (event) => {
