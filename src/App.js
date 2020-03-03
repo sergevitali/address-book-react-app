@@ -104,15 +104,19 @@ class App extends Component {
       newEmployee[inputIdentifier] = this.state.newEmployee[inputIdentifier].value
     }
     newEmployee["id"] = "emp" + this.state.elementId
-    console.log()
     let submitted = this.state.submitted
     submitted = true
     this.setState({
       employees: [...this.state.employees, newEmployee],
       submitted: submitted,
-      elementId:this.state.elementId + 1
+      elementId:this.state.elementId + 1,
+      searched: false,
+      searchedInput: ''
     })
-    setTimeout(() => this.clearInputFields())
+    setTimeout(() => {
+      console.log(this.state.searchedInput)
+      document.getElementById('search-button').value = '';
+      return this.clearInputFields()})
   }
   
 
@@ -126,7 +130,7 @@ class App extends Component {
     }
     this.setState({
       newEmployee: newEmployee,
-      formIsValid: false
+      formIsValid: false,
     })
   }
   
@@ -182,7 +186,6 @@ class App extends Component {
     const doesDisplayForm = this.state.displayForm
     this.setState({
       displayForm: !doesDisplayForm,
-      searched: false
     })
     setTimeout(() => this.clearInputFields())
   }
