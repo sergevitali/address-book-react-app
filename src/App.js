@@ -114,7 +114,6 @@ class App extends Component {
       searchedInput: ''
     })
     setTimeout(() => {
-      console.log(this.state.searchedInput)
       document.getElementById('search-button').value = '';
       return this.clearInputFields()})
   }
