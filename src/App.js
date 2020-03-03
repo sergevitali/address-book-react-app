@@ -247,6 +247,7 @@ class App extends Component {
     this.state.searched || this.state.filteredElements > 0 ?
       employees = this.state.filteredElements:
       employees = this.state.employees
+
     return (
       <div className = { styles.App } >
         <h1 style={{padding:'10px'}}>Employee Address Book</h1> {
@@ -265,6 +266,14 @@ class App extends Component {
               inputted={(event) => this.inputReceiveHandler(event)}
         />
         <div className={styles.Border} id='border-div'>
+          {
+          employees.length === 0 && this.state.searched && this.state.employees.length !== 0 ? 
+          <p>Oops, looks like there isn't anything like this</p> : null
+          }
+          {
+          this.state.employees.length === 0 ? 
+          <p>You can add new employees by clicking the "Add New Employee" button.</p> : null
+          }
           {
           employees.map((employee, index) => (
             <Employee
